@@ -5,11 +5,12 @@ on:
       - master
 
 name: Deploy String boot to Amazon EC2
-env:
-  PROJECT_NAME: action_codedeploy
+  env:
+    PROJECT_NAME: action_codedeploy
+
 
 #실행되는 서버 사양은 우분투 18.04버전jobs:
-  deploy:
+deploy:
     name: DEPLOY
     runs-on: ubuntu-18.04 (버전에 맞게 설정)
 #작동확인
