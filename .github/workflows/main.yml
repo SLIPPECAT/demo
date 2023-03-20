@@ -1,12 +1,11 @@
-#main 브랜치에 푸시가 일어날때마다 동작
+name: Deploy String boot to Amazon EC2
+
 on:
   push:
-    branches:
-      - master
-
-name: Deploy String boot to Amazon EC2
-  env:
-    PROJECT_NAME: action_codedeploy
+    branches: [ master ]
+    
+env:
+  PROJECT_NAME: action_codedeploy
 
 
 #실행되는 서버 사양은 우분투 18.04버전jobs:
