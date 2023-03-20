@@ -12,7 +12,7 @@ env:
 jobs:
   deploy:
     name: DEPLOY
-    runs-on: ubuntu-18.04 (버전에 맞게 설정)
+    runs-on: ubuntu-latest
 #작동확인
     steps:
       - name: Checkout
